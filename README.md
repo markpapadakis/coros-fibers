@@ -1,12 +1,6 @@
 # coros-fibers
-Coroutines/Fibers implementation for x86.
+Coroutines/Fibers implementation for x86-64
 See [Coroutines and Fibers. why and When](https://medium.com/software-development-2/coroutines-and-fibers-why-and-when-5798f08464fd#.qz59082w0) article for information.
-
-This is an initial release, and it depends on [our](http://phaistosnetworks.gr/) Switch framework to compile. I will remove those dependecies later and will provide a better example than what's available in coroutines.cpp, and will also add a proper Makefile.
-
-I am pushing this here so that I will be motivated to do this right sometime soon :-)
-
-You can do whatever you want with this code - distribute it freely.
 
 ## Performance
 For x86-64, 15 instructions are needed(see `coro_transfer` implementation) for a context switch. 
